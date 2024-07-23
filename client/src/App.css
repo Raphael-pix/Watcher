@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+:root{
+    --background: #111;
+    --background-dark-gray:#252525;
+    --background-light-gray:#d9d9d9;
+    --background-light:#95959584;
+    --text: #FFF;
+    --text-supplementary:#f7f7f7;
+    --text-grey-supplementary:#495057;
+    --subtext:#CED4DA;
+    --hero-text:#FFF;
+    --header-text:#FFF;
+    --header-text-supplementary:#d7d7d7;
+    --header-text-active:#FFF;
+    --button-bg-main:transparent;
+    --button-bg-dark:#121316;
+    --button-bg-supplementary:#343A40;
+    --shadow:#63636333;
+    --border:#CED4DA;
+    --border-light:#7d7d7df1;
+    --cover-dark-hero:#0000006f;
+    --cover-dark-details:#000000c1;
+    --fade:#25252555;
+    --bg-hero-icon:#80808069;
+    --profile-bg:#444;
+    --button-text:#2c2c2c;
+    --control-bg:transparent;
+    --control-color:#FFF;
+    --control-bg-active:#FFF;
+    --control-text-active:#2c2c2c;
+    --link-color:#93B2F2;
+    --link-icon:#ff4000;
+    --star-icon:#ffd60a;
+    --toogle-icon: #252525;
+    --footer-bg:#121316;
+    --skeleton-loader-base:#202020;
+    --skeleton-loader-highlight: #444; 
+}
+[data-theme = "light"]{
+    --background: #f7f7f7; 
+    --background-dark-gray: #e0e0e0; 
+    --background-light-gray: #f0f0f0; 
+    --background-light: #e8e8e8;
+    --text: #2c2c2c; 
+    --text-supplementary: #444444; 
+    --text-grey-supplementary: #595959; 
+    --subtext: #7a7a7a; 
+    --hero-text:#FFF;
+    --header-text:#a9a9a9;
+    --header-text-supplementary:#8d8d8d;
+    --header-text-active:#4e4e4e;
+    --button-bg-main: transparent;
+    --button-bg-dark: #9a9a9a; 
+    --button-bg-supplementary: #c1c0c0;
+    --control-bg:transparent;
+    --control-color:#2c2c2c;
+    --control-bg-active:#2c2c2c;
+    --control-text-active:#FFF;
+    --shadow: #00000029;
+    --border: #d1d1d1;
+    --border-light: #bdbdbd; 
+    --profile-bg:#bababa;
+    --fade: #d9d9d980; 
+    --toogle-icon: #ffff64;
+    --footer-bg:#ebebeb;
+    --skeleton-loader-base:#e0e0e0;
+    --skeleton-loader-highlight: #d3d3d3; 
+}
+.App{
+    min-height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-out;
+    overflow-x: hidden;
+}
+.section-title{
+    color: var(--text);
+}

@@ -1,0 +1,14 @@
+.trailer-videos-container{
+    padding:10px 30px;
+    padding-top: 20px;
+}
+.trailer-videos .section-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.trailer-videos .videos{
+    display: flex;
+    gap: 10px;
+}

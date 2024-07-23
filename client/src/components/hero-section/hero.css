@@ -1,0 +1,119 @@
+.hero-section{
+    width: 100%;height: 448px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.current-poster{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+.hide-current-poster{
+   opacity: 0;
+}
+.poster-info{
+    margin:30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: var(--hero-text);
+    z-index: 2;
+}
+.poster-title{
+    margin: 0;
+    font-weight: 800;
+    font-size: 3rem;
+    padding-bottom: 5px;
+    max-width: 800px;
+}
+.overview{
+    width: 45rem;
+    line-height: 1.3rem;
+    margin: .2rem 0;
+    font-size: .8rem;
+    max-width: 360px;
+    height: 80px;
+}
+.buttons{
+    display:  flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+.buttons button{
+    display: flex;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: var(--hero-text);
+    color: var(--button-text);
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.cover-darken{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-color: var(--cover-dark-hero);
+}
+.fade-bottom{
+    height: 1.8rem;width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        var(--background),
+        var(--background)
+    );
+    position: absolute;
+    bottom: 0;right: 0;left: 0;
+}
+
+.hero-icons{
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+}
+.hero-icon{
+    padding: 20px;
+    background-color: var( --bg-hero-icon);
+    border-radius: 8px;
+    color: var(--hero-text);
+    cursor: pointer;
+}
+.hero-icon:hover{
+    background-color: var(--background);
+}
+
+@media screen and (max-width:375px) {
+    .current-poster{
+       background-position: center;
+    }
+    .poster-info{
+        width: 100%;
+        text-align: center;
+    }
+    .logo img{
+        width:23px;height: 35px;
+    }
+    .logo span{
+        font-size: 1rem;
+    }
+    .poster-title{
+        font-size: 2rem;
+    }
+    .overview{
+        display: none;
+    }
+    .logo,.buttons{
+        justify-content: center;
+    }
+    .hero-icon{
+        padding: 10px;
+    }
+}

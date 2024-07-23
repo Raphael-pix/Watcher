@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  margin-bottom: 10px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.header-container.fixed{
+  position: fixed;
+  top: 0;left: 0;right: 0;
+}
+.header-container.absolute{
+  position:absolute;
+  top: 0;left: 0;right: 0;
+}
+.logo {
+  width: 100px;
+  height: 38px;
+  margin-right: 50px;
+  font-weight: 600;
+  color: var(--header-text);
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.nav-menu {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 18px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+.icons {
+  color: var(--header-text);
+}
+.profile-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--background-light-gray);
+}
+.profile-box img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: inherit;
+}
+.search-options-container {
+  height: 17px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  display: none;
+  opacity: 0;
+  flex: 1;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid var(--header-text);
+  outline: 0;
+  background-color: transparent;
+  color: var(--text);
+}
+.search-input::placeholder {
+  color: var(--text);
+}
+.search-container.visible .search-input {
+  display: block;
+  opacity: 1;
+}
+.search-results{
+    max-height: 180px;
+    margin-top: 8px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.search-results::-webkit-scrollbar{
+    display: none;
+}
+.login-btn{
+  padding: 7px 15px;
+  background-color: transparent;
+  border: 1px solid var(--header-text);
+  outline: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--header-text);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.result {
+  max-width: 240px;
+  font-size: 0.8rem;
+  padding: 7px 4px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: var(--background-light);
+  border-bottom: 1px solid var(--border-light);
+}
+.result p {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text);
+}
+.result img {
+  object-fit: contain;
+  max-height: 50px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 375px) {
+  .header-container {
+    padding: 10px 4px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .logo {
+    width: auto;
+  }
+}

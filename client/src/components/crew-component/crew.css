@@ -1,0 +1,68 @@
+.castcrew-container{
+    padding:10px 30px;
+    padding-top: 20px;
+}
+.castcrew-container .section-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.actors-list{
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+}
+.actors-list::-webkit-scrollbar{
+    display: none;
+}
+.actor-profile-image-container{
+    min-width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.actor-profile-image{
+    height: 100%;width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.character{
+    text-align: center;
+    font-weight: 400;
+    font-size: .7rem;
+}
+.character span{
+    display: block;
+}
+.actor-name{
+    color: var(--text);
+    font-size: .75rem;
+}
+.chacter-name{
+    color: var(--subtext)
+}
+.fade-left{
+    width: 30px;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        rgba(37, 37, 37, 0.333),
+        #262427
+    );
+    position: absolute;
+    bottom: 0;top: 0;left: 0;
+    z-index: 1;
+}
+.fade-right{
+   width: 30px;
+   background-image: linear-gradient(
+       360deg,
+       transparent,
+       #212529af,
+       #21252967
+   );
+   position: absolute;
+   bottom: 0;top: 0;right: 0;
+   z-index: 1;
+}

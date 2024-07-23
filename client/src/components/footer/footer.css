@@ -1,0 +1,36 @@
+.footer-container{
+    background-color: var(--footer-bg);
+    padding: 20px 30px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    color: var(--text);
+}
+.footer-container .logo{
+    align-self: center;
+}
+.footer-text{
+    flex: 1;
+}
+.footer-container h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.footer-container p{
+    font-size: .8rem;
+    /* width: 40%; */
+}
+.contact{
+    flex: .8;
+}
+.contact-logos{
+    margin: 20px 0;
+    display: flex;
+    gap: 25px;
+}
+.contact-logo{
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+.form{
+    min-height: 100vh;
+    background-color: #111;
+    background: url('../../../public/images/background.jpg');
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    position: relative;
+}
+.form-container{
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 100px;
+    border: 1px solid white;
+    z-index: 1;
+}
+.form-title{
+    font-size: 1.4rem;
+    padding-bottom: 7px;
+    text-transform: capitalize;
+    color: white;
+}
+.form-container p{
+    font-size: .8rem;
+    color: white;
+    padding-bottom: 7px;
+}
+.form-input-container{
+    border-radius: 10px;
+    padding: 20px 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+.form-input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    outline: 0;
+    border-radius: 8px;
+    border:1px solid #d9d9d9ad;
+    margin-top: 4px; 
+}
+.form-label{
+    color: white;
+    font-size: .9rem;
+}
+.form-input:invalid{
+    background-color: transparent;
+}
+.form-input::placeholder{
+    color: rgba(211, 211, 211, 0.808);
+    text-transform: capitalize;
+}
+.submit-btn{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: .9rem;
+    color: white;
+    background-color: #4174ff;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.form-container .link{
+    text-decoration: underline;
+    color:#4174ff;
+    display: inline-block;
+    margin-left: 5px;
+}
+.error-message{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: .9rem;
+    color: #848484;
+    padding: 10px;
+}
+.error-list{
+    list-style-position: inside;
+}
+.form .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    z-index: 1;
+}
+.form .logo img{
+    width: 250px;
+}
+.form .logo p{
+    color: white;
+    font-size: 1.8rem;
+}
+.form .fade-cover{
+    position: absolute;
+    top: 0;bottom: 0;right: 0;left: 0;
+    background-color: #171515d9;
+}

@@ -1,0 +1,39 @@
+.toogle-container{
+    background-color: transparent;
+    color: var(--text);
+    padding: 4px 10px;
+    font-size: .9rem;
+    font-weight: 500;
+    position: relative;
+    transition:all 250ms ease-in-out;
+}
+#checkbox{
+    display: none;
+}
+#checkbox + label{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--header-text);
+}
+
+#checkbox + label::before{
+    content: '';
+    width: 30px;height: 16px;
+    background-color:var(--toogle-icon);
+    border-radius: 20px;
+}
+#checkbox + label::after{
+    content: '';
+    width: 16px;height: 16px;
+    background-color: var(--text);
+    border-radius: 50%;
+    position: absolute;
+    left:9.6px;
+}
+
+#checkbox:checked + label::after{
+    transform: translateX(100%);
+}

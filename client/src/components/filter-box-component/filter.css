@@ -1,0 +1,89 @@
+.filter-box-container{
+    background-color: var(--background-dark-gray);
+    padding: 15px 20px;
+    margin: 80px auto;
+    border-radius: 10px;
+    color:var(--text);
+    width:920px;
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    z-index: 2000;
+}
+.title-container{
+    display: flex;
+    align-items: center;
+}
+.clear-btn{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    border: 0;outline: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--text);
+    cursor: pointer;
+}
+.filter-box-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.filter-item-container{
+    margin: 12px 0;
+}
+.filter-item-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.filter-item{
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+.filter-item.active{
+    color: var(--control-text-active);
+    background-color: var(--control-bg-active);
+    border: 0;
+}
+.filter-item-checkbox{
+    display: none;
+}
+.filter-item-label{
+    font-size: .8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filter-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    margin-top: 20px;
+}
+.filter-btn{
+    padding:12px 10px;
+    border-radius: 10px;
+    color: var(--text);
+    border: 0;outline: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.apply-btn{
+    flex: 1;
+    background-color:var( --button-bg-dark);
+}
+.close-btn{
+    flex: .4;
+    background-color: var( --button-bg-supplementary);
+}
