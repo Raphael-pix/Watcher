@@ -40,6 +40,7 @@
     display:  flex;
     gap: 10px;
     padding: 10px 0;
+    align-items: center;
 }
 .buttons button{
     display: flex;
@@ -90,30 +91,21 @@
     background-color: var(--background);
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
     .current-poster{
-       background-position: center;
+        background-position: center;
     }
     .poster-info{
-        width: 100%;
         text-align: center;
-    }
-    .logo img{
-        width:23px;height: 35px;
-    }
-    .logo span{
-        font-size: 1rem;
+        margin: 10px auto;
     }
     .poster-title{
         font-size: 2rem;
     }
-    .overview{
+    .hero-icons{
         display: none;
     }
-    .logo,.buttons{
+    .buttons{
         justify-content: center;
-    }
-    .hero-icon{
-        padding: 10px;
     }
 }

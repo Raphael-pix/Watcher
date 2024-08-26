@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
+/* eslint-disable react/prop-types */
+import { useContext, useEffect, useState } from 'react'
 import fetchMovies from '../../utils/fetchmovies'
 import "./hero.css"
 import {FaPlay,FaInfo,FaAngleRight,FaAngleLeft} from "react-icons/fa"

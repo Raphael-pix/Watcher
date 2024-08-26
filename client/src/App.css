@@ -85,3 +85,6 @@
 .section-title{
     color: var(--text);
 }
+.App::-webkit-scrollbar{
+    display: none;
+}

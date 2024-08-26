@@ -1,5 +1,6 @@
 import menu from "./navMenu";
 import { FaSearch } from "react-icons/fa";
+import { IoMdMenu } from "react-icons/io";
 import "./header.css";
 import { useContext, useEffect, useState } from "react";
 import requests from "../../utils/request";
@@ -67,6 +68,7 @@ export default function Header() {
       }
     >
       <h1 className="logo">watcher</h1>
+      <h1 className="logo-small">w</h1>
 
       <ul className="nav-menu">
         {menu.map((menuItem) => {
@@ -138,6 +140,7 @@ export default function Header() {
             )}
           </div>
         </div>
+        <IoMdMenu size={24} color="#FFFFFF" className="menu-btn"/>
         <ToogleTheme handleToogle={()=>handleToggleTheme()} isChecked={theme === 'dark'} theme={theme}/>
         {
           user === null?

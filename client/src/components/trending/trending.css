@@ -87,16 +87,23 @@
     object-fit: contain;
     height: 100%;
 }
-@media screen and (max-width:375px) {
-    .row-container{
-        padding:0 0 5px 9px;
+@media screen and (max-width:480px) {
+    .trending-container{
+        padding:0 0 10px 10px;
     }
-    .poster{
-        min-width: 90px;
-        height: 150px;
+    .row-title{
+        font-size: 1.35rem;
+    }
+    .control{
+        padding: 5px 16px;
+        border-radius: 20px;
+        font-size: .75rem;
+        max-width: 86px;
     }
     .poster-large{
-        min-width: 120px;
-        height: 210px;
+        height: 200px;
+    }
+    .number{
+        width:45px;height: 45px;
     }
 }

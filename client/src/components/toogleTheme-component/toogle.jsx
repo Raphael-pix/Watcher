@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './toggle.css'
 
 export default function ToogleTheme({handleToogle,isChecked,theme}){

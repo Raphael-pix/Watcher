@@ -143,3 +143,16 @@
 .row-container .cover-darken{
     position: fixed;
 }
+
+@media screen and (max-width:480px) {
+    .row-container{
+        padding: 20px;
+    }
+    .row-container .movie-posters{
+        display: flex;
+    }
+    .movie-poster{
+       min-height: 200px;
+    }
+    
+}

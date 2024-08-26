@@ -1,7 +1,7 @@
 .footer-container{
     background-color: var(--footer-bg);
     padding: 20px 30px;
-    height: 150px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     gap: 35px;
@@ -33,4 +33,18 @@
 }
 .contact-logo{
     cursor: pointer;
+}
+@media screen and (max-width:480px) {
+    .footer-container h2{
+        font-size: .9rem;
+    }
+    .contact{
+        flex: .4;
+    }
+    .contact-logos{
+        gap: 15px;
+    }
+    .contact-logo{
+        width: 16px;height: 16px;
+    }
 }

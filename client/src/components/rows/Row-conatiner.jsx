@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './rows.css'
 import { Link } from "react-router-dom"
 import SkeletonLoader from "../skeleton-loader/skeleton"

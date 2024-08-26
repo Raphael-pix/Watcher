@@ -16,14 +16,15 @@
   position:absolute;
   top: 0;left: 0;right: 0;
 }
-.logo {
-  width: 100px;
-  height: 38px;
+.logo,.logo-small {
   margin-right: 50px;
   font-weight: 600;
   color: var(--header-text);
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+}
+.logo-small{
+  display: none;
 }
 .nav-menu {
   flex: 1;
@@ -123,15 +124,27 @@
   max-height: 50px;
   border-radius: 3px;
 }
+.right-section .menu-btn{
+  display: none;
+}
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
+  .logo,
+  .right-section .toogle-container,
+  .right-section .login-btn {
+    display: none;
+  }
+  .logo-small,
+  .right-section .menu-btn{
+    display: block;
+  }
   .header-container {
-    padding: 10px 4px;
+    padding: 10px 12px;
+  }
+  .logo{
+
   }
   .nav-menu {
     display: none;
-  }
-  .logo {
-    width: auto;
   }
 }
