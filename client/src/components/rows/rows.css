@@ -147,6 +147,7 @@
 @media screen and (max-width:480px) {
     .row-container{
         padding: 20px;
+        width: auto;
     }
     .row-container .movie-posters{
         display: flex;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./details.css";
 import { useEffect, useState, useContext } from "react";
 import { baseUrl, API_KEY } from "../../utils/request";
