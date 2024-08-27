@@ -95,7 +95,10 @@
         background-position: center;
     }
     .film-image-container{
-        height: 220px;
+        height: 200px;
+    }
+    .film-name{
+        font-size: 1.7rem;
     }
     .film-description{
         display: none;

@@ -16,3 +16,9 @@
 .suggested-list::-webkit-scrollbar{
     display: none;
 }
+
+@media screen and (max-width:480px) {
+    .suggested-container{
+        padding:20px 10px;
+    }
+}

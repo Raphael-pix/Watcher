@@ -62,3 +62,15 @@
 .review{
     font-size: .7rem;
 }
+
+@media screen and (max-width:480px) {
+    .reviews-list{
+        gap: 20px;
+    }
+    .review-container{
+        width: 350px;height: 180px;
+    }
+    .reviews-container{
+        padding:10px;
+    }
+}

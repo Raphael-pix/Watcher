@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./trailer.css";
 import YouTube from "react-youtube";
 import { useEffect, useState } from "react";
