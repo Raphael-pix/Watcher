@@ -5,6 +5,7 @@ import TrailerConatiner from "../../components/trailer-component/trailer";
 import CastAndCrew from "../../components/crew-component/crew";
 import Reviews from "../../components/reviews-component/reviews";
 import Suggested from "../../components/suggested component/Suggested";
+import DetailsDescription from "../../components/details-header-container/DetailsDescription";
 
 export default function FilmDetails(){
     const {id,film} = useParams()
@@ -13,6 +14,7 @@ export default function FilmDetails(){
     return <div className="film-details-container">
         <div className="details-container">
             <DetailsHeaderContainer id={id} mediaType={film}/>
+            <DetailsDescription id={id} mediaType={film}/>
             <TrailerConatiner id={id} mediaType={film}/>
             <CastAndCrew id={id} mediaType={film}/>
             <Reviews id={id} mediaType={film}/>

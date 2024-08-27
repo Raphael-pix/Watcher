@@ -90,6 +90,21 @@
     top: 0;bottom: 0;left: 0;right: 0;
     background-color: var(--cover-dark-details);
 }
+.descriprion-container{
+    padding:10px;
+    padding-top: 20px;
+    display: none;
+}
+.descriprion-container .section-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.descriprion-container .description-text{
+    width: 100%;
+    font-size: .9rem;
+}
 @media screen and (max-width:480px) {
     .film-detail-container{
         background-position: center;
@@ -105,5 +120,8 @@
     }
     .control-btn span{
         display: none;
+    }
+    .descriprion-container{
+        display: block;
     }
 }

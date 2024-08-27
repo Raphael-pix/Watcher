@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 import "./crew.css";
 import { useEffect, useState } from "react";
 import { baseUrl, API_KEY } from "../../utils/request";

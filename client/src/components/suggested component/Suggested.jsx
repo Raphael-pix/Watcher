@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './suggested.css'
 import { useEffect, useState } from "react"
 import { baseUrl, API_KEY } from "../../utils/request";
