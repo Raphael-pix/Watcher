@@ -7,6 +7,7 @@ import requests from "../../utils/request";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { GlobalContext } from "../../context/context";
 import ToogleTheme from "../toogleTheme-component/toogle";
+import Menu from "./Menu";
 
 export default function Header() {
   const location = useLocation();
@@ -18,6 +19,7 @@ export default function Header() {
   const [searchResults, setSearchResults] = useState([]);
   const [show, handleShow] = useState(false);
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [isMenuVisible,setIsMenuVisible]= useState(false)
   const {theme,setTheme,user,setUser}=useContext(GlobalContext)
   const navigate = useNavigate()
 
@@ -140,7 +142,7 @@ export default function Header() {
             )}
           </div>
         </div>
-        <IoMdMenu size={24} color="#FFFFFF" className="menu-btn"/>
+        <IoMdMenu size={24} color="#FFFFFF" className="menu-btn" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
         <ToogleTheme handleToogle={()=>handleToggleTheme()} isChecked={theme === 'dark'} theme={theme}/>
         {
           user === null?
@@ -149,6 +151,9 @@ export default function Header() {
           <button className="login-btn" onClick={()=>handleLogout()}>logout</button>
         }
       </div>
+      {
+        isMenuVisible && <Menu/>
+      }
     </div>
   );
 }

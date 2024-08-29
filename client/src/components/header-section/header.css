@@ -127,7 +127,28 @@
 .right-section .menu-btn{
   display: none;
 }
-
+.vertical-menu{
+  position: fixed;
+  top: 0;left: 0;bottom: 0;
+  padding: 50px 20px;
+  padding-top: 70px;
+  width: 40%;
+  background-color: #111111e7;
+}
+.vertical-menu-item{
+  display: block;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.login-btn-vertical{
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.vertical-menu .toogle-container{
+  position: absolute;
+  top: 2%;right: 2%;
+}
 @media screen and (max-width: 480px) {
   .logo,
   .right-section .toogle-container,
